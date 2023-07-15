@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="logo" class="active">
+          <a href="#">Portfo<span>lio.</span></a>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="#home" style="--i: 1">Home</a></li>
+          <li><a href="#about" style="--i: 2">About</a></li>
+          <li><a href="#myskills" style="--i: 3">Skills</a></li>
+          <li><a href="#projects" style="--i: 4">Projects</a></li>
+          <li><a href="#contact" style="--i: 5">Contact</a></li>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <section class="home" id="home">
+      <div class="home-container">
+        <div class="home-content">
+          <div class="text-1">Hello, my name is</div>
+          <div class="text-2">Aayushmaan Tawer</div>
+          <div class="text-1">BTECH, IT Undergrad at Birla Instutute Of technology, Mesra</div>
+          <div class="text-3">And I'm a <span class="typing"></span></div>
+      
+        </div>
+      </div>
+    </section>
+    <div class="about" id="about">
+      <img class="mypic" src="assets/img.jpg" />
+      <div>
+        <div class="about-text">
+          About me<br />--who i am?--
+          <hr />
+        </div>
+        <br />
+        <p>
+          I am currently a student at Birla Institute Of Technology, Mesra
+          pursuing BTECH in IT branch. I have done my schooling at Dehradun
+          Public School, Govindpuram, Ghaziabad UP. I can sum up my entire life
+          in three words – I can win! I am a self-starter with strong
+          interpersonal skills. I work efficiently both as an individual
+          contributor as well as along with a team. I seek new challenges and
+          try to think out of the box while looking for creative solutions to a
+          given problem.
+        </p>
+        <!-- <button>Download CV</button> -->
+      </div>
+    </div>
+    <div class="myskills" id="myskills">
+      <div class="skilltxt">
+        My Skills<br />
+        --what technical skills i have?--
+        <div class="skillpic">
+          <hr />
+          <br />
+          <img style="border-radius: 8%" src="assets/c.png" />
+          <img src="assets/cpp.png" />
+          <img style="border-radius: 8%" src="assets/python.png" />
+          <img src="assets/htm.png" />
+          <img src="assets/css.png" />
+          <img src="assets/js.png" />
+          <img src="assets/bootstrap.png" />
+          <img src="assets/nodejs.png" />
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <div class="projecttxt">
+        My Projects<br />
+        --what i have worked on?--
+      </div>
+      <hr style="margin: 0 6%" />
+      <div class="prcontainer">
+        <div>
+          <img src="assets/p1.png" />
+          <h2>Portfolio Website</h2>
+          <br />
+          <p>This is a porfolio website, having features like getting user data from codeforces</p>
+          
+            <button onclick="window.location.href = 'https://codeforces.com/'" class = "gitRepo"> GitHub Repo</button>
+            <button onclick="window.location.href = 'https://codeforces.com/'" class = "linkto"> Link</button>
+          
+        </div>
+        <div>
+          <img src="assets/p2.png" />
+          <h2>Project 2</h2>
+          <br />
+          <p>I am currently working on the project</p>
+          <button onclick="window.location.href = 'https://codeforces.com/'" class = "gitRepo"> GitHub Repo</button>
+            <button onclick="window.location.href = 'https://codeforces.com/'" class = "linkto"> Link</button>
+        </div>
+        <div>
+          <img src="assets/p3.png" />
+          <h2>Project 3</h2>
+          <br />
+          <p>I am currently working on the project</p>
+          <button onclick="window.location.href = 'https://codeforces.com/'" class = "gitRepo"> GitHub Repo</button>
+            <button onclick="window.location.href = 'https://codeforces.com/'" class = "linkto" > Link</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="codeforces-container">
+      <div class="codeforces-header">
+        <h2>Want to know your Codeforces Stats ?</br>
+        --here we go--</h2>
+        <hr style="margin: 0 6%" />
+      </div>
+      <div class="rating">
+        <div class="cpstats col">
+          <div class="cpwrapper">
+            <p class="curr" id="current-rating">Current Rating : 1076</p>
+            <p class="max" id="max-rating">Max Rating : 1076</p>
+            <p class="curr" id="current-rank">Current Rank : Newbie</p>
+            <p class="max" id="max-rank">Max Rank : Newbie</p>
+            <a id="user-link" href=""
+              ><button id="entered_id">lowkeyaayu</button></a
+            >
+          </div>
+        </div>
+        <div class="cplogo col">
+          <div class="imgwrapper">
+            <a href="https://codeforces.com/"
+              ><img src="assets/codeforces-logo.jpg"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="username">
+        <input id="input_user" type="text" placeholder="Enter your username" />
+        <button id="user_submit" type="cf">Submit</button>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <div class="contacttxt">
+        Contact<br />
+        --want to get in touch?--
+      </div>
+      <hr style="margin: 0 6%" />
+      <div class="contactform">
+        <form id = "contact-form" name = "submit-to-google-sheet">
+          <div id="header">
+            <h1>Contact Form</h1>
+            <h6>Please fill all the contacts in detail</h6>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="head">
+            <p>
+              Your Name:<input
+              name="Name"
+                type="text"
+                placeholder="Your Full Name"
+                required
+                style="margin: 5px 0 15px 0"
+              />
+            </p>
+            <p>
+              Your Email:<input
+                type="email"
+                name="Email"
+                placeholder="Valid Email Address"
+                required
+                style="margin: 5px 0 15px 0"
+              />
+            </p>
+            <p>
+              Message:<textarea
+                name="Message"
+                cols="10"
+                rows="5"
+                required
+                placeholder="Your Message"
+                style="margin: 5px 0 15px 0"
+              ></textarea>
+            </p>
+            <p>
+              Subject:<input
+                type="text"
+                name="Subject"
+                placeholder="About"
+                required
+                style="margin: 5px 0 15px 0"
+              />
+            </p>
+            <input  type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+
+      <div class="social">
+        <div class="socialtxt">My social media links</div>
+        <hr style="margin: 0 6%" />
+        <div class="handles">
+          <a target="_blank" href="https://www.instagram.com/iaayushmaan">
+            <img src="assets/insta.png"
+          /></a>
+          <a target="_blank" href="https://www.facebook.com/iaayushmaan">
+            <img src="assets/facebook.png"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/aayushmaan-tawer-24a23b247"
+          >
+            <img src="assets/linkedin.png"
+          /></a>
+          <a target="_blank" href="https://www.github.com/iaayushmaan">
+            <img src="assets/github.png"
+          /></a>
+        </div>
+        <p style="color: black;">Created By Aayushmaan Tawer using pure HTML, CSS and JavaScript</p>
+        <a href="#">Back to Top</a>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
